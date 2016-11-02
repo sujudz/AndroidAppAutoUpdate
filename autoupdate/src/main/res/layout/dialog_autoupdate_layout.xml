@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dialog_padding"
+    android:background="@drawable/dialog_autoupdate_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/dialog_padding">
+
+    <TextView
+        android:textColor="@color/primary_text"
+        android:id="@+id/tv_autoupdate_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/title"
+        android:text="title" />
+
+    <TextView
+        android:textColor="@color/secondary_text"
+        android:id="@+id/tv_autoupdate_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/body"
+        android:paddingRight="@dimen/body"
+        android:paddingTop="@dimen/body"
+        android:textSize="@dimen/body"
+        android:text="content" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:clickable="true"
+            android:id="@+id/tv_autoupdate_ok"
+            style="@style/primaryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:textSize="@dimen/button"
+            android:text="确定" />
+
+        <Button
+            android:id="@+id/tv_autoupdate_cancel"
+            style="@style/primaryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginLeft="@dimen/button"
+            android:textSize="@dimen/button"
+            android:text="取消" />
+    </LinearLayout>
+
+</LinearLayout>
