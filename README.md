@@ -1,4 +1,5 @@
 IMetaModelParse metaModelParse = new IMetaModelParse() {
+
     @Override
     public MetaModel parse(String data) {
         return new CustomMeta();
@@ -6,6 +7,7 @@ IMetaModelParse metaModelParse = new IMetaModelParse() {
 };
 
 Config config = new Config.Builder()
+
         .addContext(this)
         .addUpdateUrl("http://update.url")
         .addIMetaModelParse(metaModelParse)
