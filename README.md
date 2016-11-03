@@ -1,3 +1,6 @@
+App Update插件，集成到项目里，快速实现App自动升级提醒并下载最新安装包；
+截图：
+![截图1](info-1.png)
 IMetaModelParse metaModelParse = new IMetaModelParse() {
 
     @Override
